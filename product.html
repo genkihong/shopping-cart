@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <title>六角購物商城</title>
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+      六角購物商城
+    </a>
+    
+    <div class="dropdown ml-auto">
+      <!-- 右側購物車圖示 -->
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-shopping-cart text-dark fa-2x"></i>
+        <span class="badge badge-pill badge-danger">66</span>
+      </button>
+      <!-- 購物車內容 -->
+      <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+        <div class="px-4 py-3">
+          <h6>已選擇商品</h6>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌西裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$520</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌女裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$480</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="checkout.html" class="btn btn-outline-primary btn-block">
+            <i class="fas fa-shopping-cart mr-3"></i>結帳去
+          </a>
+        </div>  
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb bg-transparent pl-0">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="text-decoration-none">首頁</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="index.html" class="text-decoration-none">金牌專賣店</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sticky-top" style="top: 10px;">
+          <h1 class="h2">金牌西裝
+            <small class="text-secondary">(加拉哈德版)</small>
+          </h1>
+          <div class="d-flex justify-content-end align-items-end">
+            <del class="text-muted">售價 $1299</del>
+            <div class="h3 ml-auto mb-0 text-danger">
+              <small>特價 NT$</small>
+              <strong>520</strong>
+            </div>
+          </div>
+          <hr> 尺寸:
+          <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+            <label class="btn btn-outline-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>S
+            </label>
+            <label class="btn btn-outline-secondary">
+              <input type="radio" name="options" id="option1" autocomplete="off">M
+            </label>
+            <label class="btn btn-outline-secondary disabled">
+              <input type="radio" name="options" id="option1" autocomplete="off" disabled>L
+            </label>
+            <label class="btn btn-outline-secondary">
+              <input type="radio" name="options" id="option1" autocomplete="off">XL
+            </label>
+          </div>
+
+          <div class="input-group mt-3">
+            <select class="form-control mr-1">
+              <option value="1">1 件</option>
+              <option value="2">2 件</option>
+              <option value="3">3 件</option>
+            </select>
+            <a href="#" class="btn btn-outline-warning">
+              <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <h2>帥氣的西裝無人能敵</h2>
+        <p class="small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little
+          bit longer.</p>
+
+        <h3 class="text-center mt-5">合身剪裁</h3>
+        <img src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" class="w-100" alt="">
+
+        <h3 class="text-center mt-5">簡單就好</h3>
+        <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" class="w-100" alt="">
+
+        <h3 class="text-center mt-5">不佔空間</h3>
+        <img src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" class="w-100" alt="">
+        <div class="bg-warning rounded mt-3 p-3" role="alert">
+          <h2 class="text-center">購物說明</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, at! Totam, exercitationem repellat. Saepe facere
+            amet expedita perferendis voluptatem dicta dignissimos tempora ut atque, rerum doloribus? Magni, blanditiis.
+            Assumenda, distinctio!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Footer -->
+  <footer class="bg-light py-5 mt-5">
+    <div class="container">
+      <ul class="list-unstyled d-md-flex justify-content-center">
+        <li class="text-hexschool mr-3">© Copright 2018 六角購物商城</li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">
+            <i class="fab fa-instagram mr-2"></i>Instagrame
+          </a>
+        </li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">
+            <i class="fab fa-facebook mr-2"></i>Facebook
+          </a>
+        </li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">About</a>
+        </li>
+      </ul>
+      <p class="text-hexschool text-center mt-3">
+        <strong>Made with Bootstrap4</strong>
+      </p>
+    </div>
+  </footer>
+<!-- Remove modal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-secondary font-weight-bold">確認刪除訂單!</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn btn-outline-danger btn-sm">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: "Microsoft JhengHei";
+}
+
+.text-hexschool {
+  color: #00cc99;
+}
+
+.btn-cart {
+  position: relative;
+}
+
+.btn-cart .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.dropdown-menu {
+  z-index: 1030;
+}
+
+.jumbotron-bg {
+  min-height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1350);
+  background-size: cover;
+  background-position: center center;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #00cc99;
+  border-color: #00cc99;
+}
+
+.bg-lighter {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  -webkit-transition: .3s, -webkit-box-shadow;
+  transition: .3s, -webkit-box-shadow;
+  transition: box-shadow, .3s;
+  transition: box-shadow, .3s, -webkit-box-shadow;
+}
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+.btn.disabled {
+  pointer-events: none;
+}
+
+.alert-rounded {
+  border-radius: 50px;
+}
+/*# sourceMappingURL=all.css.map */

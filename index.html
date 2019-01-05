@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/all.css">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/all.js"></script>
+  <title>六角購物商城</title>
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+      六角購物商城
+    </a>
+    
+    <div class="dropdown ml-auto">
+      <!-- 右側購物車圖示 -->
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-shopping-cart text-dark fa-2x"></i>
+        <span class="badge badge-pill badge-danger">66</span>
+      </button>
+      <!-- 購物車內容 -->
+      <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+        <div class="px-4 py-3">
+          <h6>已選擇商品</h6>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌西裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$520</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌女裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$480</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="checkout.html" class="btn btn-outline-primary btn-block">
+            <i class="fas fa-shopping-cart mr-3"></i>結帳去
+          </a>
+        </div>  
+      </div>
+    </div>
+  </nav>
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-center">
+    <div class="container">
+      <div class="bg-lighter text-center p-3">
+        <h1 class="display-3">最後一波出清! 全館跳樓大拍賣!</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- 左側選單 list group-->
+      <div class="col-md-3 mb-4">
+        <div class="list-group sticky-top" style="top: 10px;">
+          <a href="#list-gold" class="list-group-item list-group-item-action active" data-toggle="list">
+            <i class="fas fa-gem fa-lg mr-3"></i>金牌專賣店
+          </a>
+          <a href="#list-gift" class="list-group-item list-group-item-action" data-toggle="list">
+            <i class="fas fa-gift fa-lg mr-3"></i>禮品區
+          </a>
+          <a href="#list-video" class="list-group-item list-group-item-action" data-toggle="list">
+            <i class="fas fa-video fa-lg mr-3"></i>影音商品
+          </a>
+          <a href="#list-pet" class="list-group-item list-group-item-action" data-toggle="list">
+            <i class="fas fa-paw fa-lg mr-3"></i>寵物專用
+          </a>
+          <a href="#list-house" class="list-group-item list-group-item-action" data-toggle="list">
+            <i class="fas fa-home fa-lg mr-3"></i>居家環境
+          </a>
+        </div>
+      </div>
+      <!-- 右側商品列表 -->
+      <div class="col-md-9">
+        <!-- Search bar -->
+        <form class="form-inline justify-content-end mb-4">
+          <div class="input-group w-50">
+            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-sm" type="submit">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- Product list -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="list-gold">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <div class="btn-group btn-group-sm">
+                      <a href="product.html" class="btn btn-outline-warning disabled">S</a>
+                      <a href="product.html" class="btn btn-outline-warning">M</a>
+                      <a href="product.html" class="btn btn-outline-warning">L</a>
+                      <a href="product.html" class="btn btn-outline-warning">XL</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">金牌女裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <div class="btn-group btn-group-sm">
+                      <a href="#" class="btn btn-outline-warning">S</a>
+                      <a href="#" class="btn btn-outline-warning">M</a>
+                      <a href="#" class="btn btn-outline-warning">L</a>
+                      <a href="#" class="btn btn-outline-warning">XL</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1486250944723-86bca2b15b06?w=1351" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">特工眼鏡</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <a href="#" class="btn btn-outline-danger btn-sm w-100">
+                      <i class="fas fa-shopping-cart mr-3"></i><strong>On Sale !</strong>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1350" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">特工西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <div class="btn-group btn-group-sm">
+                      <a href="#" class="btn btn-outline-warning">S</a>
+                      <a href="#" class="btn btn-outline-warning">M</a>
+                      <a href="#" class="btn btn-outline-warning">L</a>
+                      <a href="#" class="btn btn-outline-warning">XL</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">變聲領帶</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <div class="btn-group btn-group-sm">
+                      <a href="#" class="btn btn-outline-warning">S</a>
+                      <a href="#" class="btn btn-outline-warning">M</a>
+                      <a href="#" class="btn btn-outline-warning">L</a>
+                      <a href="#" class="btn btn-outline-warning">XL</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card box-shadow border-0 text-center h-100">
+                  <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=500" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ferrari supercar</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white">
+                    <a href="#" class="btn btn-outline-secondary btn-sm w-100 disabled" tabindex="-1">
+                      <i class="fas fa-shopping-cart mr-3"></i>缺貨中...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="list-gift">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1510546462255-979b0e0ca1b5?w=500" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">精緻禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1350" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">超值禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1453834190665-46ff0a1fbd5a?w=1955" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">尊爵禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1511434139893-de3e59cdeee5?w=1351" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">薑餅人禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1480632563560-30f503c09195?w=1350" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">典雅禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card box-shadow border-0 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?w=1350" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">皇家禮品盒</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <a href="#" class="btn btn-outline-warning btn-sm w-100">
+                        <i class="fas fa-shopping-cart mr-3"></i>加入購物車
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="list-video">video</div>
+          <div class="tab-pane" id="list-pet">pet</div>
+          <div class="tab-pane" id="list-house">house</div>
+        </div>
+        <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center mt-5">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"> 
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-light py-5 mt-5">
+    <div class="container">
+      <ul class="list-unstyled d-md-flex justify-content-center">
+        <li class="text-hexschool mr-3">© Copright 2018 六角購物商城</li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">
+            <i class="fab fa-instagram mr-2"></i>Instagrame
+          </a>
+        </li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">
+            <i class="fab fa-facebook mr-2"></i>Facebook
+          </a>
+        </li>
+        <li class="mr-3">
+          <a class="text-hexschool text-decoration-none" href="#">About</a>
+        </li>
+      </ul>
+      <p class="text-hexschool text-center mt-3">
+        <strong>Made with Bootstrap4</strong>
+      </p>
+    </div>
+  </footer>
+<!-- Remove modal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-secondary font-weight-bold">確認刪除訂單!</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn btn-outline-danger btn-sm">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
